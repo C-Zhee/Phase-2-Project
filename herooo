@@ -1,0 +1,36 @@
+{
+    "name": "ZENYATTA",
+    "role": "support",
+    "link": "https://overwatch.blizzard.com/heroes/zenyatta",
+    "image": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/71cabc939c577581f66b952f9c70891db779251e8e70f29de3c7bf494edacfe4.png",
+    "BGimage": "https://images.blz-contentstack.com/v3/assets/blt2477dcaf4ebd440c/bltaed6928bd9793d05/631a8a573ab6f40dd2a90691/2600_Zenyatta.jpg",
+    "description": "Zenyatta is an omnic monk who wanders the world in search of spiritual enlightenment. It is said that those who cross his path are never the same again.",
+    "origin": "Shambali Monastery, Nepal (formerly)",
+    "abilities": [
+        {
+            "name": "Orb of Destruction",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5740abd7e5f0de513ebcb32b073f27ba8f5625804598d5762cefd0c7331c1437.png",
+            "video": "https://assets.blz-contentstack.com/v3/assets/blt2477dcaf4ebd440c/bltf4ca4e78a1202a5c/633909618537f87bfbcdc464/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_ZenyattaOrbOfDestruction_WEB_16x9_1920x1080p30_WEBM.webm"
+        },
+        {
+            "name": "Orb of Discord",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f416ae3c602c4f920551057176a3618441f943a0faea5e3cf77dc5db0e5128a5.png",
+            "video": "https://assets.blz-contentstack.com/v3/assets/blt2477dcaf4ebd440c/blte6b8146876ad4dcc/633909617e84e17596f9c902/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_ZenyattaOrbOfDiscord_WEB_16x9_1920x1080p30_WEBM.webm"
+        },
+        {
+            "name": "Orb of Harmony",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/999f5d34dd3c8dfb045bc69129d1b6aac547b98e252b68f2599b878d15d841cb.png",
+            "video": "https://assets.blz-contentstack.com/v3/assets/blt2477dcaf4ebd440c/bltf546ab77ca486589/63390961b8dbde69f5279952/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_ZenyattaOrbOfHarmony_WEB_16x9_1920x1080p30_WEBM.webm"
+        },
+        {
+            "name": "Transcendence",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6ac5d4f08023cafc9f5412e45141cddecfdb2cb43ecf8415c12d1d161cce4678.png",
+            "video": "https://assets.blz-contentstack.com/v3/assets/blt2477dcaf4ebd440c/blt075de741930a7d1c/633909612dc7636608cc715c/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_ZenyattaTranscendence_WEB_16x9_1920x1080p30_WEBM.webm"
+        },
+        {
+            "name": "Snap Kick",
+            "image": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c14b2c5652526a006233965b176fb2b5af9e7c5d44045fad3844267303f07091.png",
+            "video": "https://assets.blz-contentstack.com/v3/assets/blt2477dcaf4ebd440c/blte9a71d8b553eb877/633909603917977bfd986203/OVERWATCH_WEBSITE_CHARACTER_CAPTURE_ZenyattaSnapKick_WEB_16x9_1920x1080p30_WEBM.webm"
+        }
+    ]
+}
