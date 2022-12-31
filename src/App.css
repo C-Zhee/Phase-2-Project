@@ -1,5 +1,12 @@
-.grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto ;
-    padding: 10px;
+html {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero-select {
+  background-color: white;
+}
+
+.hero-img {
+  height: 50px;
 }

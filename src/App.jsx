@@ -1,25 +1,27 @@
-import './App.css'
-import { useEffect, useState } from 'react'
-import OverwatchHeroes from './OverwatchHeroes'
-
+import "./App.css";
+import { useEffect, useState } from "react";
+import HeroSelect from "./HeroSelect";
+import SelectedHero from "./SelectedHero";
 const App = () => {
-  
-  const [heroes, setHeroes] = useState([])
+  const [heroes, setHeroes] = useState([]);
+  const [currentlySelected, setcurrentlySelected] = useState("");
 
-  useEffect (()=>{
-    const Hello = async() => {
-      let hey = await fetch("http://localhost:3000/heroes")
-      let hi = await hey.json()
-      setHeroes(hi)
-    }
-    Hello()
-  },[])
+  useEffect(() => {
+    const fetchData = async () => {
+      let res = await fetch("http://localhost:3000/heroes");
+      let heroData = await res.json();
+      setHeroes(heroData);
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className="App">
-      <OverwatchHeroes heroes={heroes}/>
+      <SelectedHero currentlySelected={currentlySelected} />
+      <HeroSelect setcurrentlySelected={setcurrentlySelected} heroes={heroes} />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
