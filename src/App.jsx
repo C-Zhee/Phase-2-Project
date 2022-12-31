@@ -5,6 +5,7 @@ import OverwatchHeroes from './OverwatchHeroes'
 const App = () => {
   
   const [heroes, setHeroes] = useState([])
+  const [search, setSearch] =  useState("")
 
   useEffect (()=>{
     const Hello = async() => {
@@ -16,7 +17,7 @@ const App = () => {
   },[])
 
   return (
-    <div className="App">
+    <div>
       <OverwatchHeroes heroes={heroes}/>
     </div>
   )

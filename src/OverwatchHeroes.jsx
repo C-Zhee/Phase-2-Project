@@ -4,8 +4,7 @@ import HeroInfo from "./HeroInfo"
 const OverwatchHeroes = ({heroes}) => {
     return(
         <div className="grid">
-        {
-            heroes.map((info)=>{    
+        { heroes.map((info)=>{    
                 return(
                     <div >
                         <HeroInfo info={info}/>
