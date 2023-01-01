@@ -3,8 +3,8 @@ import HeroPortrait from "./HeroPortrait";
 const HeroSelect = ({ heroes, setcurrentlySelected }) => {
   return (
     <>
-      <h1 className="select">SELECT A HERO</h1>
       <div className="hero-select">
+        <h1 className="select">SELECT A HERO</h1>
         {heroes.map((hero) => {
           return (
             <HeroPortrait
