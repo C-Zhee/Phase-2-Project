@@ -10,5 +10,3 @@ const HeroPortrait = ({ setCurrentlySelected, hero }) => {
 };
 
 export default HeroPortrait;
-
-// onclick change the currently selected state to the target.hero

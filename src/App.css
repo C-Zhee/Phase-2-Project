@@ -22,10 +22,54 @@ html {
   align-items: flex-start;
 }
 
+h3 {
+  text-transform: capitalize;
+}
+
+.logo {
+  height: 450px;
+  align-self: center;
+}
+
+.selected-hero {
+  display: flex;
+  gap: 50px;
+  position: relative;
+  z-index: 2;
+  margin-left: -220px;
+  margin-bottom: 100px;
+}
+
 .selected-img {
   border: white 2px solid;
-  height: 350px;
-  margin-bottom: 125px;
+  height: 250px;
+  margin-top: 25px;
+}
+
+.bg-img {
+  position: absolute;
+  width: 1500px;
+  z-index: 1;
+  opacity: 60%;
+  margin-left: -250px;
+}
+
+.hero-info {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  border-left: orange solid 4px;
+  width: 335px;
+  height: 100px;
+  font-weight: 700;
+  padding-left: 15px;
+  background-color: rgba(255, 255, 255, 0.562);
+  padding: 15px;
+  color: rgb(0, 0, 0);
 }
 
 .select {
