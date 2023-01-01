@@ -1,12 +1,58 @@
-html {
+:root {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   box-sizing: border-box;
+  display: flex;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgb(0, 0, 19), rgb(12, 12, 12));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.selected-img {
+  border: white 2px solid;
+  height: 350px;
+  margin-bottom: 125px;
+}
+
+.select {
+  font-family: "Open Sans", sans-serif;
+  color: orange;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-right: 200px;
+  border-bottom: white solid 1px;
 }
 
 .hero-select {
-  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1100px;
+  gap: 10px;
 }
 
 .hero-img {
-  height: 50px;
+  border-radius: 15%;
+  height: 75px;
+  border: rgb(255, 255, 255) 2px solid;
+}
+
+.hero-img:hover {
+  box-shadow: 0px 0px 3px 3px white;
+  cursor: pointer;
 }

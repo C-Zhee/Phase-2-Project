@@ -1,7 +1,11 @@
 const SelectedHero = ({ currentlySelected, heroes }) => {
   return (
     <>
-      <img src={currentlySelected.image} alt={currentlySelected.name} />
+      <img
+        className="selected-img"
+        src={currentlySelected.image}
+        alt={currentlySelected.name}
+      />
     </>
   );
 };

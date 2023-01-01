@@ -17,7 +17,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div className="container">
       <SelectedHero currentlySelected={currentlySelected} />
       <HeroSelect setcurrentlySelected={setcurrentlySelected} heroes={heroes} />
     </div>
