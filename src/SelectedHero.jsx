@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
+import AbilityVideo from "./AbilityVideo";
 
 const SelectedHero = ({ currentlySelected }) => {
   const [isAbilities, setAbilities] = useState(false);
-  const [video, setVideo] = useState("");
 
   return (
     <>
@@ -31,28 +31,9 @@ const SelectedHero = ({ currentlySelected }) => {
                 <p className="description">{currentlySelected.description}</p>
               </div>
             ) : (
-              <div className="abilities">
-                {currentlySelected.abilities.map((ability) => {
-                  return (
-                    <div
-                      className="ability"
-                      onClick={() => setVideo(ability.video)}
-                    >
-                      <img
-                        className="ability-img"
-                        src={ability.image}
-                        alt={ability.name}
-                      />
-                      <h3>{ability.name}</h3>
-                    </div>
-                  );
-                })}
-              </div>
+              <AbilityVideo currentlySelected={currentlySelected} />
             )}
-            <video width="220" autoplay controls muted>
-              <source src={video} type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
+
             <button
               className="ablilites-btn"
               onClick={() => setAbilities(!isAbilities)}

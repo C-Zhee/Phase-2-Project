@@ -12,7 +12,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
+
   background-image: linear-gradient(rgb(0, 0, 19), rgb(12, 12, 12));
 }
 
@@ -35,23 +35,15 @@ h3 {
 .selected-hero {
   display: flex;
   width: 100vw;
-  height: 500px;
+  height: 525px;
   gap: 80px;
   align-items: center;
   position: relative;
-  align-self: flex-start;
-  z-index: 2;
 }
 
 .selected-img {
   border: white 2px solid;
   margin-left: 50px;
-}
-
-.bg-img {
-  width: 100vw;
-  z-index: 1;
-  opacity: 60%;
 }
 
 .hero-info {
@@ -113,7 +105,7 @@ h3 {
   bottom: 50px;
   z-index: 2;
   background: orange;
-  box-shadow: 0px 0px 3px 2px white;
+  box-shadow: 0px 0px 3px 1px white;
   color: white;
   padding: 10px;
   border: none;
@@ -127,14 +119,9 @@ h3 {
 }
 
 .abilities {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 300px;
-  width: 400px;
-  gap: 35px;
+  display: grid;
+  grid-template: auto / 350px 350px 350px 350px;
+  gap: 20px;
   color: white;
 }
 
@@ -142,9 +129,20 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 10pt;
+  font-size: 8pt;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.ability:focus {
+  box-shadow: 0px 0px 5px 3px;
 }
 
 .ability-img {
-  width: 55px;
+  height: 40px;
+}
+
+.video {
+  right: 10%;
+  bottom: 12%;
 }
