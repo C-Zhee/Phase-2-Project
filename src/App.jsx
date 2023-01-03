@@ -1,31 +1,24 @@
-import './App.css'
-import { useEffect, useState } from 'react'
-import OverwatchHeroes from './OverwatchHeroes'
-import SearchBar from './SearchBar'
+import "./App.css";
+import { useEffect, useState } from "react";
+import OverwatchHeroes from "./OverwatchHeroes";
 
 const App = () => {
-  
-  const [heroes, setHeroes] = useState([])
-  const [search, setSearch] = useState("")
+  const [heroes, setHeroes] = useState([]);
 
-  useEffect (()=>{
-    const Hello = async() => {
-      let hey = await fetch("http://localhost:3000/heroes")
-      let hi = await hey.json()
-      setHeroes(hi)
-    }
-    Hello()
-  },[])
-console.log(setSearch)
+  useEffect(() => {
+    const Hello = async () => {
+      let hey = await fetch("http://localhost:3000/heroes");
+      let hi = await hey.json();
+      setHeroes(hi);
+    };
+    Hello();
+  }, []);
 
   return (
-    <div>
-      <h1>Hero Searcher</h1>
-      <SearchBar search={search} setSearch={setSearch}/>
-    
-      <OverwatchHeroes heroes={heroes} search={search}/>
+    <div className="App">
+      <OverwatchHeroes heroes={heroes} />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
