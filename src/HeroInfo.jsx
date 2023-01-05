@@ -1,6 +1,5 @@
-
-const HeroInfo = ({info}) => {
-    return(
+const HeroInfo = ({ info }) => {
+    return (
         <div>
             <p>{info.name}</p>
             <p>{info.role}</p>

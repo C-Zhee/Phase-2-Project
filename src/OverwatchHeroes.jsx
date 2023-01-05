@@ -1,24 +1,20 @@
 import HeroInfo from "./HeroInfo"
 
 
-const OverwatchHeroes = ({heroes, search}) => {
+const OverwatchHeroes = ({ heroes,  addMember }) => {
+    
 
-const heroFilter = heroes.filter((hero) => {
-    return(
-        hero.name.toLowerCase().includes(search.toLowerCase())
-        )
-    })
-
-    return(
-        <div className="grid">
-        {heroFilter.map((info)=>{    
-                return(
-                    <div >
-                        <HeroInfo info={info}/>
+ 
+    return (
+        <div className="grid" >
+            {heroes.map((info) => {
+                return (
+                    <div onClick={() => { addMember(info) }} >
+                        <HeroInfo info={info} />
                     </div>
                 )
             })
-        }
+            }
         </div>
     )
 }
